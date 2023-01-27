@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Stjldbl1.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://matematika_otazka.gd" type="Script" id=2]
+[ext_resource path="res://grass-green-color-solid-background-1920x1080.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Grass-green-color-solid-background-1920X1080" type="Sprite" parent="."]
+position = Vector2( 515, 439 )
+scale = Vector2( 1.25321, 1.25321 )
+texture = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 515, 299 )
+current = true
+
+[node name="sus" type="Label" parent="Camera2D"]
+margin_left = -661.0
+margin_top = -371.0
+margin_right = -616.0
+margin_bottom = -326.0
+rect_rotation = 360.0
+rect_scale = Vector2( 11.0797, 11.0797 )
+custom_fonts/font = SubResource( 1 )
+text = "sugis
+"
+script = ExtResource( 2 )
